@@ -3,7 +3,7 @@ open Slices
 open Nameof
 open OpenStaticClasses
 open Applicatives
-open CSharp
+open DefaultInterfaceImplementationsInterop
 
 [<EntryPoint>]
 let main _ =
@@ -13,8 +13,6 @@ let main _ =
     doNameof()
     printStaticClassValue()
     printApplicatives()
-
-    let x = { new MyDim }
-    printfn "%d" x.Z
+    printDefaultInterfaceStuff()
 
     0 // return an integer exit code
