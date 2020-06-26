@@ -4,6 +4,8 @@ open Nameof
 open OpenStaticClasses
 open Applicatives
 open DefaultInterfaceImplementationsInterop
+open Quotations
+open NullableInterop
 
 [<EntryPoint>]
 let main _ =
@@ -14,5 +16,6 @@ let main _ =
     printStaticClassValue()
     printApplicatives()
     printDefaultInterfaceStuff()
+    checkIfDateTimeHasValue()
 
     0 // return an integer exit code
