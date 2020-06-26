@@ -1,10 +1,9 @@
-﻿// Learn more about F# at http://fsharp.org
+// Learn more about F# at http://fsharp.org
 open Slices
 open Nameof
 open OpenStaticClasses
 open Applicatives
 open DefaultInterfaceImplementationsInterop
-open Quotations
 open NullableInterop
 
 [<EntryPoint>]
