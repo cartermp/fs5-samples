@@ -1,10 +1,11 @@
 // Learn more about F# at http://fsharp.org
 open Slices
 open Nameof
-open OpenStaticClasses
+open OpenTypeDeclarations
 open Applicatives
 open DefaultInterfaceImplementationsInterop
 open NullableInterop
+open InterpolatedStrings
 
 [<EntryPoint>]
 let main _ =
@@ -12,9 +13,10 @@ let main _ =
     fixedIndexSlices()
     reverseSlices()
     doNameof()
-    printStaticClassValue()
+    printOpenTypeDeclarationsStuff()
     printApplicatives()
     printDefaultInterfaceStuff()
     checkIfDateTimeHasValue()
+    doInterpolatedStrings()
 
     0 // return an integer exit code

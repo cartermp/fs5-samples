@@ -2,18 +2,25 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="InterfacesImplementedGenericInstantiations.fs" />
+    <Compile Include="InterpolatedStrings.fs" />
     <Compile Include="NullableInterop.fs" />
+    <Compile Include="OverloadedCustomKeywordsInCEs.fs" />
     <Compile Include="Applicatives.fs" />
-    <Compile Include="OpenStaticClasses.fs" />
+    <Compile Include="OpenTypeDeclarations.fs" />
     <Compile Include="Nameof.fs" />
     <Compile Include="Slices.fs" />
     <Compile Include="DefaultInterfaceImplementationsInterop.fs" />
     <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.SystemTextJson" Version="0.12.12" />
   </ItemGroup>
 
   <ItemGroup>
